@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.blueshirtdesign.cordova.plugin.PGExternalScreen"
+    version="0.0.2">
+
+    <name>External Screen</name>
+
+    <description>The PhoneGap iOS ExternalScreen Plugin is a native Plugin for PhoneGap/Apache Cordova which enables multi-screen application scenarios for PhoneGap projects. This plugin is only for for iOS devices.</description>
+
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=2.9.0" />
+    </engines>
+
+    <js-module src="www/externalscreen.js" name="PGExternalScreen">
+        <clobbers target="PGExternalScreen"/>
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PGExternalScreen">
+                <param name="ios-package" value="PGExternalScreen"/>
+            </feature>
+                </config-file>
+                <header-file src="src/ios/PGExternalScreen.h" />
+            <source-file src="src/ios/PGExternalScreen.m" />
+    </platform>
+
+</plugin>

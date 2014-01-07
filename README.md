@@ -6,7 +6,7 @@ The Cordova iOS ExternalScreen Plugin is a native Plugin for PhoneGap/Apache Cor
 Code adapted for plugman from:
 https://github.com/triceam/phonegap-plugins/tree/master/iPhone/ExternalScreen
 
-I plan to submit this to PhoneGap:Build soon. 
+https://build.phonegap.com/plugins/271
 
 The MIT License (MIT)
 
